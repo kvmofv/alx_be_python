@@ -1,16 +1,15 @@
 
-def safe_divide(x, y):
+def safe_divide(numerator, denominator):
     try:
-        x = float(x)
-        y = float(y)
+        numerator = float(numerator)
+        denominator = float(denominator)
 
     except ValueError:
         return "Error: Please enter numeric values only."
 
-
     try:
-       result = x / y
-       return f"The result of the division is {result}"
-        
+        result = numerator / denominator
+        return f"The result of the division is {result}"
+
     except ZeroDivisionError:
         return "Error: Cannot divide by zero."
