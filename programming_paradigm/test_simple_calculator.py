@@ -18,7 +18,7 @@ class CalculatorTest(unittest.TestCase):
     def test_multiplication(self):
         self.assertEqual(self.calc.multiply(8, 20), 160)
 
-    def test_divide(self):
+    def test_division(self):
         self.assertEqual(self.calc.divide(4, 2), 2)
 
     def test_division_by_zero(self):
